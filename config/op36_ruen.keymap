@@ -132,7 +132,7 @@
   &kp Q        &kp W        &kp E         &kp R          &kp T                          &kp Y  &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                          &kp H  &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V          &kp B                          &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
-                                          &kp BACKSPACE  &mo 4  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
+                                          &kp BACKSPACE  &mo 4  &kp SPACE    &kp ENTER  &mo 0  &kp TAB
             >;
 
             display-name = "Base";
@@ -143,32 +143,30 @@
   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &kp BACKSPACE             &mo 4               &kp SPACE    &kp ENTER  &mo 3               &kp TAB
+                                                                                   &kp BACKSPACE             &mo 4               &kp SPACE    &kp ENTER  &mo 0               &kp TAB
             >;
 
             display-name = "Ru";
         };
 
-        sym_en {
-            bindings = <
-  &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp CARET  &kp LBKT         &kp UNDER        &kp RBKT        &kp DLLR
-  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
-  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &kp AMPS                     &kp AT     &kp PIPE         &kp COMMA        &kp DOT         &kp QMARK
-                                                    &trans           &mo 5      &trans    &trans  &none      &trans
-            >;
-
+        my_sym_en {
             display-name = "Symbols";
+            bindings = <
+  &hml GRAVE TILDE    &kp DLLR   &kp LBKT   &kp LPAR   &kp FSLH                     &kp BSLH  &kp LBRC  &kp LESS_THAN  &kp AMPS   &hmr PIPE CARET
+  &hml RU_NUMERO SQT  &kp MINUS  &kp QMARK  &kp COMMA  &kp COLON                    &kp SEMI  &kp DOT   &kp EXCL       &kp UNDER  &kp DQT
+  &kp STAR            &kp PLUS   &kp RBKT   &kp RPAR   &kp HASH                     &kp AT    &kp RBRC  &kp GT         &kp EQUAL  &kp PRCNT
+                                            &trans     &mo 5      &trans    &trans  &none     &trans
+            >;
         };
 
-        sym_ru {
-            bindings = <
-  &en TILDE               &en LT          &kp EQUAL         &en GT           &en GRAVE                    &en CARET  &en LBKT  &kp UNDER           &en RBKT    &en DLLR
-  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &en LBRC  &hmr RSHFT RU_SEMI  &en RBRC    &hmr RGUI EXCL
-  &en HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &en AMPS                     &en AT     &en PIPE  &kp RU_COMMA        &kp RU_DOT  &kp RU_QMARK
-                                                            &trans           &mo 5      &trans    &trans  &none      &trans
-            >;
-
+        my_sym_ru {
             display-name = "Symbols";
+            bindings = <
+  &hml GRAVE TILDE    &kp DLLR      &kp LBKT      &kp RU_LPAR   &kp RU_FSLH                     &kp RU_BSLH  &kp LBRC    &kp LESS_THAN  &kp AMPS      &hmr PIPE CARET
+  &hml RU_NUMERO SQT  &kp RU_MINUS  &kp RU_QMARK  &kp RU_COMMA  &kp RU_COLON                    &kp RU_SEMI  &kp RU_DOT  &kp RU_EXCL    &kp RU_UNDER  &kp RU_DQT
+  &kp RU_ASTERISK     &kp RU_PLUS   &kp RBKT      &kp RU_RPAR   &kp HASH                        &kp AT       &kp RBRC    &kp GT         &kp RU_EQUAL  &kp RU_PRCNT
+                                                  &trans        &mo 5         &trans    &trans  &none        &trans
+            >;
         };
 
         nav {
