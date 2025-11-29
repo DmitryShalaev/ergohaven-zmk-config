@@ -132,7 +132,7 @@
   &kp Q        &kp W        &kp E         &kp R          &kp T                          &kp Y  &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                          &kp H  &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V          &kp B                          &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
-                                          &kp BACKSPACE  &mo 4  &kp SPACE    &kp ENTER  &mo 0  &kp TAB
+                                          &kp BACKSPACE  &mo 4  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
             >;
 
             display-name = "Base";
@@ -143,7 +143,7 @@
   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &kp BACKSPACE             &mo 4               &kp SPACE    &kp ENTER  &mo 0               &kp TAB
+                                                                                   &kp BACKSPACE             &mo 4               &kp SPACE    &kp ENTER  &mo 3               &kp TAB
             >;
 
             display-name = "Ru";
@@ -162,19 +162,19 @@
         my_sym_ru {
             display-name = "Symbols";
             bindings = <
-  &hml GRAVE TILDE    &kp DLLR      &kp LBKT      &kp RU_LPAR   &kp RU_FSLH                     &kp RU_BSLH  &kp LBRC    &kp LESS_THAN  &kp AMPS      &hmr PIPE CARET
-  &hml RU_NUMERO SQT  &kp RU_MINUS  &kp RU_QMARK  &kp RU_COMMA  &kp RU_COLON                    &kp RU_SEMI  &kp RU_DOT  &kp RU_EXCL    &kp RU_UNDER  &kp RU_DQT
-  &kp RU_ASTERISK     &kp RU_PLUS   &kp RBKT      &kp RU_RPAR   &kp HASH                        &kp AT       &kp RBRC    &kp GT         &kp RU_EQUAL  &kp RU_PRCNT
-                                                  &trans        &mo 5         &trans    &trans  &none        &trans
+  &hml GRAVE TILDE    &en DLLR      &en LBKT      &kp RU_LPAR  &kp RU_FSLH                     &kp BSLH  &en LBRC  &en LESS_THAN  &en AMPS      &hmr PIPE CARET
+  &hml RU_NUMERO SQT  &kp RU_MINUS  &kp RU_QMARK  &en COMMA    &kp RU_COLON                    &kp SEMI  &kp DOT   &kp EXCL       &kp UNDER     &kp DQT
+  &kp RU_ASTERISK     &kp RU_PLUS   &en RBKT      &kp RU_RPAR  &en HASH                        &en AT    &kp RBRC  &en GT         &kp RU_EQUAL  &kp RU_PRCNT
+                                                  &trans       &mo 5         &trans    &trans  &none     &trans
             >;
         };
 
         nav {
             bindings = <
-  &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                        &kp N6           &kp N7           &kp N8           &kp N9        &kp N0
-  &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &layer_en      &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &layer_ru
-                                      &trans     &none       &trans    &trans  &mo 5            &trans
+  &none  &kp HOME      &kp UP    &kp END        &kp LC(X)                    &none  &kp N7  &kp N8  &kp N9  &none
+  &none  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LC(V)                    &none  &kp N4  &kp N5  &kp N6  &kp N0
+  &none  &kp LC(LEFT)  &none     &kp LC(RIGHT)  &kp LC(C)                    &none  &kp N1  &kp N2  &kp N3  &none
+                                 &trans         &none      &trans    &trans  &mo 5  &trans
             >;
 
             display-name = "Navigation";
