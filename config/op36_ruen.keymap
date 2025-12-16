@@ -152,9 +152,9 @@
         my_sym_en {
             display-name = "Symbols";
             bindings = <
-  &hml GRAVE TILDE    &kp DLLR   &kp LBKT   &kp LPAR   &kp FSLH                     &kp BSLH  &kp LBRC  &kp LESS_THAN  &kp AMPS   &hmr PIPE CARET
-  &hml RU_NUMERO SQT  &kp MINUS  &kp QMARK  &kp COMMA  &kp COLON                    &kp SEMI  &kp DOT   &kp EXCL       &kp UNDER  &kp DQT
-  &kp STAR            &kp PLUS   &kp RBKT   &kp RPAR   &kp HASH                     &kp AT    &kp RBRC  &kp GT         &kp EQUAL  &kp PRCNT
+  &hml GRAVE TILDE    &kp DLLR   &kp LBKT   &kp LPAR   &kp FSLH                     &kp BSLH  &kp LBRC  &hmr CARET LESS_THAN  &hmr PIPE AMPS    &kp BACKSPACE
+  &hml RU_NUMERO SQT  &kp MINUS  &kp QMARK  &kp COMMA  &kp COLON                    &kp SEMI  &kp DOT   &kp EXCL              &kp UNDER         &kp DQT
+  &kp STAR            &kp PLUS   &kp RBKT   &kp RPAR   &kp HASH                     &kp AT    &kp RBRC  &kp GT                &hmr PRCNT EQUAL  &kp DEL
                                             &trans     &mo 5      &trans    &trans  &none     &trans
             >;
         };
@@ -162,9 +162,9 @@
         my_sym_ru {
             display-name = "Symbols";
             bindings = <
-  &hml GRAVE TILDE    &en DLLR      &en LBKT      &kp RU_LPAR  &kp RU_FSLH                     &kp BSLH  &en LBRC  &en LESS_THAN  &en AMPS      &hmr PIPE CARET
-  &hml RU_NUMERO SQT  &kp RU_MINUS  &kp RU_QMARK  &en COMMA    &kp RU_COLON                    &kp SEMI  &kp DOT   &kp EXCL       &kp UNDER     &kp DQT
-  &kp RU_ASTERISK     &kp RU_PLUS   &en RBKT      &kp RU_RPAR  &en HASH                        &en AT    &kp RBRC  &en GT         &kp RU_EQUAL  &kp RU_PRCNT
+  &hml GRAVE TILDE    &en DLLR      &en LBKT      &kp RU_LPAR  &kp RU_FSLH                     &kp BSLH  &en LBRC  &hmr CARET LESS_THAN  &hmr PIPE AMPS          &en BACKSPACE
+  &hml RU_NUMERO SQT  &kp RU_MINUS  &kp RU_QMARK  &en COMMA    &kp RU_COLON                    &kp SEMI  &kp DOT   &kp EXCL              &kp UNDER               &kp DQT
+  &kp RU_ASTERISK     &kp RU_PLUS   &en RBKT      &kp RU_RPAR  &en HASH                        &en AT    &kp RBRC  &en GT                &hmr RU_PRCNT RU_EQUAL  &kp DEL
                                                   &trans       &mo 5         &trans    &trans  &none     &trans
             >;
         };
