@@ -43,15 +43,15 @@
     combos {
         compatible = "zmk,combos";
 
-        kha {
-            bindings = <&kp RU_CYRILLIC_HA>;
-            key-positions = <6 16>;
+        io {
+            bindings = <&kp RU_CYRILLIC_IO>;
+            key-positions = <4 14>;
             layers = <1>;
         };
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
-            key-positions = <7 17>;
+            key-positions = <26 16>;
             layers = <1>;
         };
 
@@ -65,6 +65,24 @@
             bindings = <&layer_ru>;
             key-positions = <3 13>;
             layers = <0>;
+        };
+
+        shcha {
+            bindings = <&kp RU_CYRILLIC_SHCHA>;
+            key-positions = <7 17>;
+            layers = <1>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <7 17>;
+            layers = <2 3>;
+        };
+
+        numero {
+            bindings = <&kp RU_NUMERO>;
+            key-positions = <15 25>;
+            layers = <2 3>;
         };
     };
 
@@ -129,10 +147,10 @@
 
         en {
             bindings = <
-  &kp Q         &kp W  &kp E  &kp R           &kp T                                    &kp Y  &kp U    &kp I  &kp O  &kp P
-  &kp A         &kp S  &kp D  &kp F           &kp G                                    &kp H  &kp J    &kp K  &kp L  &none
-  &hml LCTRL Z  &kp X  &kp C  &kp V           &kp B                                    &kp N  &kp M    &none  &none  &none
-                              &kp LEFT_SHIFT  &mo 4  &kp SPACE    &hmr LEFT_ALT ENTER  &mo 2  &kp TAB
+  &kp Q  &kp W  &kp E  &kp R           &kp T                          &kp Y  &kp U    &kp I  &kp O  &kp P
+  &kp A  &kp S  &kp D  &kp F           &kp G                          &kp H  &kp J    &kp K  &kp L  &none
+  &kp Z  &kp X  &kp C  &kp V           &kp B                          &kp N  &kp M    &none  &none  &none
+                       &kp LEFT_SHIFT  &mo 4  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
             >;
 
             display-name = "Base";
@@ -140,10 +158,10 @@
 
         ru {
             bindings = <
-  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE
-  &kp RU_CYRILLIC_EF         &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                    &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE
-  &hml LCTRL RU_CYRILLIC_YA  &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                     &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E
-                                                                       &kp LEFT_SHIFT      &mo 4               &kp SPACE    &hmr LEFT_ALT ENTER  &mo 3               &kp TAB
+  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_HA
+  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE
+  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU  &kp RU_CYRILLIC_E
+                                                                     &kp LEFT_SHIFT      &mo 4               &kp SPACE    &kp ENTER  &mo 3               &kp TAB
             >;
 
             display-name = "Ru";
@@ -152,20 +170,20 @@
         my_sym_en {
             display-name = "Symbols";
             bindings = <
-  &hml GRAVE TILDE    &kp DLLR   &kp LBKT   &kp LPAR   &kp FSLH                     &kp BSLH  &kp LBRC  &hmr CARET LESS_THAN  &hmr PIPE AMPS    &kp BACKSPACE
-  &hml RU_NUMERO SQT  &kp MINUS  &kp QMARK  &kp COMMA  &kp COLON                    &kp SEMI  &kp DOT   &kp EXCL              &kp UNDER         &kp DQT
-  &kp STAR            &kp PLUS   &kp RBKT   &kp RPAR   &kp HASH                     &kp AT    &kp RBRC  &kp GT                &hmr PRCNT EQUAL  &kp DEL
-                                            &trans     &mo 5      &trans    &trans  &none     &trans
+  &kp TILDE  &kp DLLR   &kp LBKT   &kp LPAR   &kp FSLH                     &kp BSLH  &kp LBRC  &kp LESS_THAN  &kp AMPERSAND  &kp PIPE
+  &kp SQT    &kp MINUS  &kp QMARK  &kp COMMA  &kp COLON                    &kp SEMI  &kp DOT   &kp EXCL       &kp UNDER      &kp DQT
+  &kp STAR   &kp PLUS   &kp RBKT   &kp RPAR   &kp HASH                     &kp AT    &kp RBRC  &kp GT         &kp RU_EQUAL   &kp PERCENT
+                                   &trans     &mo 5      &trans    &trans  &none     &trans
             >;
         };
 
         my_sym_ru {
             display-name = "Symbols";
             bindings = <
-  &hml GRAVE TILDE    &en DLLR      &en LBKT      &kp RU_LPAR  &kp RU_FSLH                     &kp BSLH  &en LBRC  &hmr CARET LESS_THAN  &hmr PIPE AMPS          &en BACKSPACE
-  &hml RU_NUMERO SQT  &kp RU_MINUS  &kp RU_QMARK  &en COMMA    &kp RU_COLON                    &kp SEMI  &kp DOT   &kp EXCL              &kp UNDER               &kp DQT
-  &kp RU_ASTERISK     &kp RU_PLUS   &en RBKT      &kp RU_RPAR  &en HASH                        &en AT    &kp RBRC  &en GT                &hmr RU_PRCNT RU_EQUAL  &kp DEL
-                                                  &trans       &mo 5         &trans    &trans  &none     &trans
+  &kp TILDE        &en DLLR      &en LBKT      &kp RU_LPAR  &kp RU_FSLH                     &kp BSLH  &en LBRC  &kp LESS_THAN  &kp AMPERSAND  &kp PIPE
+  &kp SQT          &kp RU_MINUS  &kp RU_QMARK  &en COMMA    &kp RU_COLON                    &kp SEMI  &kp DOT   &kp EXCL       &kp UNDER      &kp DQT
+  &kp RU_ASTERISK  &kp RU_PLUS   &en RBKT      &kp RU_RPAR  &en HASH                        &en AT    &kp RBRC  &en GT         &kp RU_EQUAL   &kp RU_PERCENT
+                                               &trans       &mo 5         &trans    &trans  &none     &trans
             >;
         };
 
@@ -189,15 +207,6 @@
             >;
 
             display-name = "Adjust";
-        };
-
-        layer_6 {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
-            >;
         };
     };
 };
