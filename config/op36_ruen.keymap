@@ -1,9 +1,7 @@
 #include "keys_ru.h"
 #include "keys_ru.h"
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 &mt {
     quick-tap-ms = <200>;
@@ -43,15 +41,15 @@
     combos {
         compatible = "zmk,combos";
 
-        kha {
-            bindings = <&kp RU_CYRILLIC_HA>;
-            key-positions = <6 16>;
+        shcha {
+            bindings = <&kp RU_CYRILLIC_SHCHA>;
+            key-positions = <17 7>;
             layers = <1>;
         };
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
-            key-positions = <7 17>;
+            key-positions = <26 16>;
             layers = <1>;
         };
 
@@ -65,6 +63,36 @@
             bindings = <&layer_ru>;
             key-positions = <3 13>;
             layers = <0>;
+        };
+
+        yo {
+            bindings = <&kp RU_CYRILLIC_IO>;
+            key-positions = <4 14>;
+            layers = <1>;
+        };
+
+        mo6_1 {
+            bindings = <&mo 6>;
+            key-positions = <30 31>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        mo6_2 {
+            bindings = <&mo 6>;
+            key-positions = <31 32>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        mo6_3 {
+            bindings = <&mo 6>;
+            key-positions = <33 34>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        mo6_4 {
+            bindings = <&mo 6>;
+            key-positions = <34 35>;
+            layers = <0 1 2 3 4 5>;
         };
     };
 
@@ -129,21 +157,21 @@
 
         en {
             bindings = <
-  &kp Q         &kp W  &kp E  &kp R           &kp T                                    &kp Y  &kp U    &kp I  &kp O  &kp P
-  &kp A         &kp S  &kp D  &kp F           &kp G                                    &kp H  &kp J    &kp K  &kp L  &none
-  &hml LCTRL Z  &kp X  &kp C  &kp V           &kp B                                    &kp N  &kp M    &none  &none  &none
-                              &kp LEFT_SHIFT  &mo 4  &kp SPACE    &hmr LEFT_ALT ENTER  &mo 2  &kp TAB
+  &kp Q  &kp W  &kp E  &kp R           &kp T                          &kp Y  &kp U  &kp I  &kp O  &kp P
+  &kp A  &kp S  &kp D  &kp F           &kp G                          &kp H  &kp J  &kp K  &kp L  &none
+  &kp Z  &kp X  &kp C  &kp V           &kp B                          &kp N  &kp M  &none  &none  &none
+                       &kp LEFT_SHIFT  &mo 4  &kp SPACE    &kp ENTER  &mo 2  &none
             >;
 
-            display-name = "Base";
+            display-name = "En";
         };
 
         ru {
             bindings = <
-  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE
-  &kp RU_CYRILLIC_EF         &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                    &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE
-  &hml LCTRL RU_CYRILLIC_YA  &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                     &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E
-                                                                       &kp LEFT_SHIFT      &mo 4               &kp SPACE    &hmr LEFT_ALT ENTER  &mo 3               &kp TAB
+  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_HA
+  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE
+  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU  &kp RU_CYRILLIC_E
+                                                                     &kp LEFT_SHIFT      &mo 4               &kp SPACE    &kp ENTER  &mo 3               &none
             >;
 
             display-name = "Ru";
@@ -171,10 +199,10 @@
 
         nav {
             bindings = <
-  &kp ESC  &kp HOME      &kp UP    &kp END        &kp LC(X)                    &none  &kp N7  &kp N8  &kp N9  &kp BSPC
-  &none    &kp LEFT      &kp DOWN  &kp RIGHT      &kp LC(V)                    &none  &kp N4  &kp N5  &kp N6  &kp N0
-  &none    &kp LC(LEFT)  &none     &kp LC(RIGHT)  &kp LC(C)                    &none  &kp N1  &kp N2  &kp N3  &kp DEL
-                                   &trans         &none      &trans    &trans  &mo 5  &trans
+  &none      &kp LC(LEFT_ARROW)  &kp UP     &kp LC(RIGHT_ARROW)  &kp ESC                      &kp ESC  &kp N7  &kp N8  &kp N9  &kp BSPC
+  &kp LC(A)  &kp LEFT            &kp DOWN   &kp RIGHT            &kp TAB                      &kp TAB  &kp N4  &kp N5  &kp N6  &kp N0
+  &kp LC(Z)  &kp LC(X)           &kp LC(C)  &kp LC(V)            &kp LC(Y)                    &none    &kp N1  &kp N2  &kp N3  &kp DEL
+                                            &trans               &none      &trans    &trans  &mo 5    &trans
             >;
 
             display-name = "Nav";
@@ -182,22 +210,24 @@
 
         adj {
             bindings = <
-  &bt BT_SEL 0  &bt BT_SEL 1  &out OUT_BLE  &out OUT_USB  &bt BT_CLR_ALL                    &none   &kp F7  &kp F8  &kp F9  &kp F12
-  &none         &none         &none         &none         &none                             &none   &kp F4  &kp F5  &kp F6  &kp F11
-  &bootloader   &none         &none         &none         &studio_unlock                    &none   &kp F1  &kp F2  &kp F3  &kp F10
-                                            &trans        &trans          &trans    &trans  &trans  &trans
+  &studio_unlock  &none         &none           &none      &kp ESC                    &kp ESC          &kp F7  &kp F8  &kp F9  &kp F12
+  &sk LEFT_GUI    &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LCTRL  &kp TAB                    &kp TAB          &kp F4  &kp F5  &kp F6  &kp F11
+  &bootloader     &none         &none           &none      &none                      &kp PRINTSCREEN  &kp F1  &kp F2  &kp F3  &kp F10
+                                                &trans     &trans   &trans    &trans  &trans           &trans
             >;
 
             display-name = "Adjust";
         };
 
-        layer_6 {
+        mod {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+  &trans        &trans    &trans     &trans     &kp ESC                    &kp ESC  &trans     &trans     &trans    &trans
+  &sk LEFT_GUI  &sk LALT  &sk LSHFT  &sk LCTRL  &kp TAB                    &kp TAB  &sk LSHFT  &sk LSHFT  &sk LALT  &sk LGUI
+  &trans        &trans    &trans     &trans     &trans                     &trans   &trans     &trans     &trans    &trans
+                                     &trans     &trans   &trans    &trans  &trans   &trans
             >;
+
+            label = "Mode";
         };
     };
 };
