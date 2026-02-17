@@ -210,9 +210,9 @@
         my_sym_en {
             display-name = "Symbols";
             bindings = <
-  &kp TILDE  &kp DLLR   &kp LBKT   &kp LPAR   &kp FSLH                     &kp BSLH  &kp LBRC  &kp LESS_THAN  &hmr PIPE AMPS  &kp BACKSPACE
-  &kp APOS   &kp MINUS  &kp QMARK  &kp COMMA  &kp COLON                    &kp SEMI  &kp DOT   &kp EXCL       &kp UNDER       &kp DQT
-  &kp STAR   &kp PLUS   &kp RBKT   &kp RPAR   &kp HASH                     &kp AT    &kp RBRC  &kp GT         &kp EQUAL       &kp DEL
+  &kp TILDE  &kp DLLR   &kp LBKT   &kp LPAR   &kp FSLH                     &kp BSLH  &kp LBRC  &kp LESS_THAN  &kp AMPS   &kp BACKSPACE
+  &kp APOS   &kp MINUS  &kp QMARK  &kp COMMA  &kp COLON                    &kp SEMI  &kp DOT   &kp EXCL       &kp UNDER  &kp DQT
+  &kp STAR   &kp PLUS   &kp RBKT   &kp RPAR   &kp HASH                     &kp AT    &kp RBRC  &kp GT         &kp EQUAL  &kp DEL
                                    &trans     &mo 5      &trans    &trans  &none     &trans
             >;
         };
@@ -220,9 +220,9 @@
         my_sym_ru {
             display-name = "Symbols";
             bindings = <
-  &en TILDE        &en DLLR      &en LBKT      &kp RU_LPAR  &kp RU_FSLH                     &kp BSLH  &en LBRC  &kp LESS_THAN  &hmr PIPE AMPS  &en BACKSPACE
-  &en APOS         &kp RU_MINUS  &kp RU_QMARK  &en COMMA    &kp RU_COLON                    &en SEMI  &en DOT   &kp EXCL       &kp UNDER       &en DQT
-  &kp RU_ASTERISK  &kp RU_PLUS   &en RBKT      &kp RU_RPAR  &en HASH                        &en AT    &en RBRC  &en GT         &kp EQUAL       &kp DEL
+  &en TILDE        &en DLLR      &en LBKT      &kp RU_LPAR  &kp RU_FSLH                     &kp BSLH  &en LBRC  &kp LESS_THAN  &en AMPS   &en BACKSPACE
+  &en APOS         &kp RU_MINUS  &kp RU_QMARK  &en COMMA    &kp RU_COLON                    &en SEMI  &en DOT   &kp EXCL       &kp UNDER  &en DQT
+  &kp RU_ASTERISK  &kp RU_PLUS   &en RBKT      &kp RU_RPAR  &en HASH                        &en AT    &en RBRC  &en GT         &kp EQUAL  &kp DEL
                                                &trans       &mo 5         &trans    &trans  &none     &trans
             >;
         };
