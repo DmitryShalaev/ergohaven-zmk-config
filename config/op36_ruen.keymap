@@ -124,6 +124,18 @@
             key-positions = <28 18>;
             layers = <3 2>;
         };
+
+        Caret_en {
+            bindings = <&kp CARET>;
+            key-positions = <7 17>;
+            layers = <2>;
+        };
+
+        Caret_ru {
+            bindings = <&en CARET>;
+            key-positions = <7 17>;
+            layers = <3>;
+        };
     };
 
     macros {
