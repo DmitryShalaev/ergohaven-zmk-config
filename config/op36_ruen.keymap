@@ -232,7 +232,7 @@
         my_sym_ru {
             display-name = "Symbols";
             bindings = <
-  &en TILDE        &en DLLR      &en LBKT      &kp RU_LPAR  &kp RU_FSLH                     &kp BSLH  &en LBRC  &kp LESS_THAN  &en AMPS   &en BACKSPACE
+  &en TILDE        &en DLLR      &en LBKT      &kp RU_LPAR  &kp RU_FSLH                     &kp BSLH  &en LBRC  &en LESS_THAN  &en AMPS   &en BACKSPACE
   &en APOS         &kp RU_MINUS  &kp RU_QMARK  &en COMMA    &kp RU_COLON                    &en SEMI  &en DOT   &kp EXCL       &kp UNDER  &en DQT
   &kp RU_ASTERISK  &kp RU_PLUS   &en RBKT      &kp RU_RPAR  &en HASH                        &en AT    &en RBRC  &en GT         &kp EQUAL  &kp DEL
                                                &trans       &mo 5         &trans    &trans  &none     &trans
