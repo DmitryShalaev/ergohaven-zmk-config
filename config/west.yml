@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: ergohaven-zmk-qube
       remote: dmitryshalaev
-      revision: db3e6e27226c57499e1e8ae00e2035b98d269a25
+      revision: a577a329b9f1fd176edefed67f6c565351bc484b
     - name: ergohaven-zmk
       remote: ergohaven
       revision: main
