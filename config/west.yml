@@ -2,12 +2,7 @@ manifest:
   remotes:
     - name: ergohaven
       url-base: https://github.com/ergohaven
-    - name: dmitryshalaev
-      url-base: https://github.com/DmitryShalaev
   projects:
-    - name: ergohaven-zmk-qube
-      remote: dmitryshalaev
-      revision: eh
     - name: ergohaven-zmk
       remote: ergohaven
       revision: main
