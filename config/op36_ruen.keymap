@@ -74,67 +74,67 @@
         mo6_1 {
             bindings = <&mo 6>;
             key-positions = <30 31>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 3 4 4 5>;
         };
 
         mo6_2 {
             bindings = <&mo 6>;
             key-positions = <31 32>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 3 4 4 5>;
         };
 
         mo6_3 {
             bindings = <&mo 6>;
             key-positions = <33 34>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 3 4 4 5>;
         };
 
         mo6_4 {
             bindings = <&mo 6>;
             key-positions = <34 35>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 3 4 4 5>;
         };
 
         grave {
             bindings = <&en GRAVE>;
             key-positions = <0 10>;
-            layers = <2 3>;
+            layers = <3 4>;
         };
 
         nomero {
             bindings = <&kp RU_NUMERO>;
-            key-positions = <20 10>;
-            layers = <3 2>;
+            key-positions = <14 24>;
+            layers = <4 3>;
         };
 
         pipe_en {
             bindings = <&kp PIPE>;
             key-positions = <8 18>;
-            layers = <2>;
+            layers = <3>;
         };
 
         pipi_ru {
             bindings = <&en PIPE>;
             key-positions = <18 8>;
-            layers = <3>;
+            layers = <4>;
         };
 
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <28 18>;
-            layers = <3 2>;
+            layers = <4 3>;
         };
 
         Caret_en {
             bindings = <&kp CARET>;
             key-positions = <7 17>;
-            layers = <2>;
+            layers = <3>;
         };
 
         Caret_ru {
             bindings = <&en CARET>;
             key-positions = <7 17>;
-            layers = <3>;
+            layers = <4>;
         };
     };
 
@@ -202,7 +202,7 @@
   &kp Q  &kp W  &kp E  &kp R           &kp T                          &kp Y  &kp U  &kp I  &kp O  &kp P
   &kp A  &kp S  &kp D  &kp F           &kp G                          &kp H  &kp J  &kp K  &kp L  &none
   &kp Z  &kp X  &kp C  &kp V           &kp B                          &kp N  &kp M  &none  &none  &none
-                       &kp LEFT_SHIFT  &mo 4  &kp SPACE    &kp ENTER  &mo 2  &mo 6
+                       &kp LEFT_SHIFT  &mo 4  &kp SPACE    &kp ENTER  &mo 3  &mo 6
             >;
 
             display-name = "En";
@@ -213,7 +213,7 @@
   &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_HA
   &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU  &kp RU_CYRILLIC_E
-                                                                     &kp LEFT_SHIFT      &mo 4               &kp SPACE    &kp ENTER  &mo 3               &mo 6
+                                                                     &kp LEFT_SHIFT      &mo 4               &kp SPACE    &kp ENTER  &mo 4               &mo 6
             >;
 
             display-name = "Ru";
