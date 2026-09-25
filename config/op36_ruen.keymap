@@ -134,7 +134,7 @@
         Caret_ru {
             bindings = <&en CARET>;
             key-positions = <7 17>;
-            layers = <4>;
+            layers = <2>;
         };
 
         graveEn {
@@ -146,7 +146,7 @@
         nomeroEn {
             bindings = <&en RU_NUMERO>;
             key-positions = <14 24>;
-            layers = <3>;
+            layers = <2>;
         };
     };
 
