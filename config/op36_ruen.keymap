@@ -98,31 +98,31 @@
         grave {
             bindings = <&en GRAVE>;
             key-positions = <0 10>;
-            layers = <3 4>;
+            layers = <3>;
         };
 
         nomero {
             bindings = <&kp RU_NUMERO>;
             key-positions = <14 24>;
-            layers = <4 3>;
+            layers = <3>;
         };
 
         pipe_en {
             bindings = <&kp PIPE>;
             key-positions = <8 18>;
-            layers = <3>;
+            layers = <2>;
         };
 
         pipi_ru {
             bindings = <&en PIPE>;
             key-positions = <18 8>;
-            layers = <4>;
+            layers = <3>;
         };
 
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <28 18>;
-            layers = <4 3>;
+            layers = <3 2>;
         };
 
         Caret_en {
@@ -135,6 +135,18 @@
             bindings = <&en CARET>;
             key-positions = <7 17>;
             layers = <4>;
+        };
+
+        graveEn {
+            bindings = <&kp GRAVE>;
+            key-positions = <0 10>;
+            layers = <2>;
+        };
+
+        nomeroEn {
+            bindings = <&en RU_NUMERO>;
+            key-positions = <14 24>;
+            layers = <3>;
         };
     };
 
@@ -220,7 +232,7 @@
         };
 
         my_sym_en {
-            display-name = "Symbols";
+            display-name = "E Symbols";
             bindings = <
   &kp TILDE  &kp DLLR   &kp LBKT   &kp LPAR   &kp FSLH                     &kp BSLH  &kp LBRC  &kp LESS_THAN  &kp AMPS   &kp BACKSPACE
   &kp APOS   &kp MINUS  &kp QMARK  &kp COMMA  &kp COLON                    &kp SEMI  &kp DOT   &kp EXCL       &kp UNDER  &kp DQT
@@ -230,7 +242,7 @@
         };
 
         my_sym_ru {
-            display-name = "Symbols";
+            display-name = "R Symbols";
             bindings = <
   &en TILDE        &en DLLR      &en LBKT      &kp RU_LPAR  &kp RU_FSLH                     &kp BSLH  &en LBRC  &en LESS_THAN  &en AMPS   &en BACKSPACE
   &en APOS         &kp RU_MINUS  &kp RU_QMARK  &en COMMA    &kp RU_COLON                    &en SEMI  &en DOT   &kp EXCL       &kp UNDER  &en DQT
