@@ -126,7 +126,7 @@
         };
 
         Caret_en {
-            bindings = <&ru CARET>;
+            bindings = <&kp CARET>;
             key-positions = <7 17>;
             layers = <3>;
         };
